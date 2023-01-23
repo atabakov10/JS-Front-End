@@ -1,0 +1,23 @@
+ul > li{
+    background-color: red;
+}
+
+.container-adjacent p + p{
+    background-color: orange;
+}
+
+.container-adjacent div + p{
+    background-color: gray;
+}
+
+.container-general p ~ p{
+    background-color: green;
+}
+
+.nth-example li {
+    background-color: yellow;
+}
+
+.nth-example li:nth-child(even){
+    background-color: greenyellow;
+}
