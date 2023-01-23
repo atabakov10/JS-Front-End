@@ -18,9 +18,14 @@ blockquote {
     font-style: italic;
 }
 
+blockquote .author {
+     text-align: right;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 table thead {
