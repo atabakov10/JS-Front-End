@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courgette', cursive;
+}
+
+.title {
+    text-align: center;
+}
+
+.red-text {
+    color: red;
+    text-align: center;
+    margin-left: 50px;
+    letter-spacing: 2px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 8px 32px;
+    gap: 12px;
+    max-width: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.card img:nth-child(1) {
+    object-fit: cover;
+}
+
+.card .title__container {
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: end;
+    color: black;
+    background-color: white;
+}
