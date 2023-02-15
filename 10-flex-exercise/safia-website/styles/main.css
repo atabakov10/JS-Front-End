@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #070e27;
@@ -17,7 +21,6 @@ p {
     position: sticky;
     top: 0px;
     background-color: #070e27;
-    z-index: 2;
 }
 
 .header .navigation {
@@ -58,6 +61,20 @@ p {
 
 .btn.btn-primary{
     background-color: #0059f7;
+}
+
+/* Global styles */
+
+.section-subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 48px;
 }
 
 /* Hero */
@@ -108,26 +125,24 @@ p {
 
 #features .title-section {
     font-size: 32px;
-    margin-left: 340px;
-
+    margin: auto;
+    text-align: center;
 }
 
 #features .description-section {
    font-size: 14px;
-    margin-bottom: 20px;
+    margin: auto;
     text-align: center;
-    margin-right: 350px;
 }
 
 #features .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-    margin-bottom: 64px;
+    grid-gap: 10px;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 50px auto 42px auto;
 }
 
 #features .container .features-info {
@@ -136,8 +151,7 @@ p {
     padding: 20px;
     cursor: pointer;
     transition: all 300ms;
-    min-width: 300px;
-    max-width: 500px;
+    margin: 16px auto;
 }
 
 #features .container .features-info:hover {
@@ -156,19 +170,44 @@ p {
 
 #features .free-trial-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    min-width: 300px;
-    margin: 0 360px;
+    flex-direction: column;
     background-color: #2355cc;
     border-radius: 10px;
+    max-width: 900px;
+    padding: 20px 64px;
+    align-items: center;
+    margin: 30px auto;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+#features .free-trial-container .up-title {
+    font-weight: initial;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+#features .free-trial-container .down-title {
+    color: #7e8bb6;
+    margin-bottom: 20px;
+    transition: all 300ms;
+}
+
+#features .free-trial-container .down-title:hover {
+    color: #fff;
 }
 
 #features .free-trial-container .btn-start {
     border: none;
     background-color: lightskyblue;
+    border-radius: 6px;
+    font-size: 24px;
+    flex-wrap: wrap;
+    transition: all 300ms;
+}
+
+#features .free-trial-container .btn-start:hover {
+    color: #fff;
 }
 
 /* HOW section */
@@ -216,4 +255,168 @@ p {
 
 #how .row .desc {
     font-size: 14px;
+}
+
+@media screen and (max-width: 767px){
+    #hero {
+        padding: 70px 64px;
+    }
+
+    #hero .welcome {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    #hero .welcome .title {
+        width: 100%;
+    }
+
+    #hero .welcome > div {
+        width: 60%;
+    }
+
+/* How */
+
+    #how .row {
+        gap: 18px;
+    }
+
+    #how .row:not(:last-child) {
+        margin-bottom: 36px;
+    }
+
+    #how .row .row-img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+    .header .navigation {
+        display: none;
+    }
+
+    .header .btn {
+        margin-left: auto;
+    }
+
+    /* Hero */
+
+    #hero .welcome > div {
+        width: 80%;
+    }
+
+    #how .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #how .row:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #how .row .desc {
+        text-align: left;
+    }
+    
+    #how .row .row-img {
+        width: 80%;
+    }
+}
+
+
+/* Pricing + mobile first */
+
+#pricing {
+    padding: 70px 64px;
+}
+
+#pricing .plans .plan {
+    padding: 12px 18px;
+    border-radius: 6px;
+    background-color: #162044;
+}
+
+#pricing .plans .plan .title {
+    font-size: 18px;
+    font-weight: normal;
+    color: #7e8bb6;
+}
+
+#pricing .plans .plan:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+#pricing .plans .plan .title .price {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #7e8bb6;
+    margin-bottom: 36px;
+}
+
+#pricing .plans .plan .title .price .dollar-sign {
+    color: #7e8bb6;
+}
+
+#pricing .plans .plan .features {
+    color: #7e8bb6;
+    margin: 0 12px 36px;
+}
+
+#pricing .plans .plan .btn {
+    text-align: center;
+}
+
+#pricing .plans .plan .features .feat:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 560px){
+    #pricing .plans {
+        display: grid;
+        max-width: 900px;
+        margin: 0 auto 48px auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    #pricing .plans .plan:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    #pricing .plans {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        align-items: end;
+    }
+
+    #pricing .plans .plan.promo {
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    #features .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #features .container .features-info {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #features .free-trial-container {
+
+    }
 }
