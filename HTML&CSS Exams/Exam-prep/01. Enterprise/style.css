@@ -1,0 +1,64 @@
+/*
+#786eff - lilavo
+#f6f8f9 - svetlo sivo
+#7b858e - tumno sivo
+#273240 - zaglavia
+*/
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: #273240;
+}
+
+.enterprise {
+    background-color: #f6f8f9;
+    padding: 0 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.enterprise .info {
+    width: 40%;
+    padding: 48px 0;
+}
+
+.enterprise .info .subtitle {
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+.enterprise .info .title {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.enterprise .desc {
+    margin-bottom: 20px;
+    color: #7b858e;
+}
+
+.enterprise .btn {
+    all: unset;
+    border: 1px solid #273240;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.enterprise .btn-primary {
+    border-color: #786eff;
+    background-color: #7e8bb6;
+    color: #fff;
+    margin-right: 12px;
+}
+
+.enterprise .img {
+    width: 30%;
+}
