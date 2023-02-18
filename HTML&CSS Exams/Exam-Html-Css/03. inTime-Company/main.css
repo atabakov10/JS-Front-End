@@ -1,0 +1,72 @@
+/* svetlo sinio - #36acc5
+    cherno - #454545*/
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.header-container {
+    padding: 16px 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+
+.header-container .navigation {
+    margin-left: auto;
+    margin-right: 24px;
+}
+
+.header-container .navigation-items {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.header-container .navigation-items a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.logo-blue-text {
+    color: #36acc5;
+}
+
+.header-container .navigation .navigation-item{
+    transition: border-bottom-color 300ms;
+}
+
+.header-container .navigation .navigation-item:hover {
+    border-bottom: 1px solid #36acc5;
+}
+
+.main-container .background-img {
+    position: relative;
+    width: 100%;
+}
+
+.main-container .container-one {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px;
+}
+
+.main-container .container-one .text , .second-text{
+    color: white;
+}
+
+.main-container .container-one .btn-get-started{
+    border: none;
+    background-color: #36acc5;
+    border-radius: 18px;
+    color: #fff;
+    padding: 4px 14px;
+    margin-top: 8px;
+}

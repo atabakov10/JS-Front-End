@@ -1,0 +1,50 @@
+
+/* Zeleno - #26892d */
+
+body {
+    font-family: PT Serif;
+    background-color: lightgray;
+}
+
+.kiwi-section {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+.container {
+    padding: 60px 15px ;
+    position: absolute;
+    display: inline;
+    align-items: flex-start;
+    height: 50vh;
+    flex-wrap: wrap;
+
+}
+
+.background-img {
+    object-fit: cover;
+    width: 50%;
+    margin: 40px 80px 80px 60px;
+}
+
+.title {
+
+}
+
+div .divider {
+   border: 1px dotted #26892d;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text {
+    font-style: italic;
+    font-weight: bold;
+}
+
