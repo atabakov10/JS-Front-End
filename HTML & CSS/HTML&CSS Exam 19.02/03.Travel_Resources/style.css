@@ -1,0 +1,134 @@
+/* btns brown - #34010d */
+
+body {
+    font-family: Poppins,sans-serif;
+    background-image: url("images/landing-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 90vh;
+    object-fit: cover;
+
+}
+
+.header-container {
+    padding: 16px 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+}
+
+
+.header-container  {
+    margin-left: 430px;
+    margin-right: 24px;
+}
+
+.header-container .navigation-items {
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+    margin-left: 350px;
+}
+
+.header-container .navigation-items a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.header-container .btn-explore {
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    background-color: #34010d;
+    margin: 0 12px 12px 12px;
+    padding: 8px;
+}
+
+.nav-container  {
+    margin-top: 300px;
+    margin-left: 350px;
+}
+
+.nav-container .title {
+    font-size: 50px;
+}
+
+.nav-container .smaller-title {
+    font-size: 29px;
+}
+
+.nav-container .desc {
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.nav-container .btn-explore {
+
+    padding: 12px;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    background-color: #34010d;
+
+}
+.main-container {
+    display: block;
+    text-align: center;
+    margin-top: 400px;
+
+
+}
+
+.main-container .title-main {
+    font-size: 30px;
+
+}
+
+.main-container .subtitle {
+    margin-top: 10px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+}
+
+.image-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+}
