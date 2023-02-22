@@ -1,13 +1,7 @@
-function reverse(n, inputArr) {
-    let arr = [];
-    for (let i = 0; i < n; i++) {
-        arr.push(inputArr[i]);
-    }
-    let output = "";
-    for (let i = arr.length-1; i >=0 ; i--) {
-        output = ``
-    }
-    console.log(output)
+function reverseArray(n, elements) {
+    const arr = elements.slice(0, n);
+    const reversedArr = arr.reverse();
+    console.log(reversedArr.join(' ')); // prints "5 4 3 2 1"
 }
 
-reverse(4, [-1, 20, 99, 5]);
+reverseArray(3, [10, 20, 30, 40, 50])
