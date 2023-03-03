@@ -1,5 +1,6 @@
 function solve(numOne, numTwo, numThree) {
-    let sumResult = numOne + numTwo;
-    let subractResult = sumResult - numThree;
-    console.log(subractResult);
+    const sum = (a, b) => a + b;
+    const subtract = (mySum, num) => mySum - num;
+
+    return subtract(sum(numOne, numTwo), numThree);
 }
